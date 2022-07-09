@@ -4,10 +4,10 @@ root.get("/",(req,res)=>{
     res.send("Hello")
 })
 
-root.listen(3000)
+//root.listen(3000)
 
-const book = express()
-book.get("/books",(req,res)=>{
+//const book = express()
+root.get("/books",(req,res)=>{
     res.send({
       "books":[{
             "name" : "Indian History",
@@ -40,4 +40,4 @@ book.get("/books",(req,res)=>{
      ]
     })
 })
-book.listen(3001)
+root.listen(3001)
